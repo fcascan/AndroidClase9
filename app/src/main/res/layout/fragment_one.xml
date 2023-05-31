@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FragmentOne"
+        tools:context=".ui.fragments.FragmentOne">
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            android:imeActionLabel="Search"
+            android:imeOptions="actionDone"
+            android:hint="Pokemon number (1-809)"
+            app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="Pokemon number" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:text="Search"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSearch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtSearch" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSearch"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Names"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#25"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTitleName"
+            app:layout_constraintEnd_toEndOf="@+id/txtNameEng"
+            app:layout_constraintTop_toTopOf="@+id/txtTitleName" />
+
+        <TextView
+            android:id="@+id/txtTitleEng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="English"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNameEng"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtNameEng" />
+
+        <EditText
+            android:id="@+id/txtNameEng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:focusable="false"
+            android:longClickable="false"
+            android:text="Pikachu"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleName" />
+
+        <TextView
+            android:id="@+id/txtTitleJap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="Japanase"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNameJap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtNameJap" />
+
+        <EditText
+            android:id="@+id/txtNameJap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:focusable="false"
+            android:longClickable="false"
+            android:text="ピカチュウ"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameEng" />
+
+        <TextView
+            android:id="@+id/txtTitleChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="Chinese"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNameChi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtNameChi" />
+
+        <EditText
+            android:id="@+id/txtNameChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:focusable="false"
+            android:longClickable="false"
+            android:text="皮卡丘"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameJap" />
+
+        <TextView
+            android:id="@+id/txtTitleFra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="French"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtNameFra"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtNameFra" />
+
+        <EditText
+            android:id="@+id/txtNameFra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:focusable="false"
+            android:longClickable="false"
+            android:text="Pikachu"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameChi" />
+
+        <TextView
+            android:id="@+id/txtTitleTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Types"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/txtTypes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtTypes" />
+
+        <EditText
+            android:id="@+id/txtTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="Electric"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameFra" />
+
+        <TextView
+            android:id="@+id/txtTitleStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:text="Stats"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTypes" />
+
+        <TextView
+            android:id="@+id/txtTitleSpAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="Sp. Attack"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStatsSpAttack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStatsSpAttack" />
+
+        <EditText
+            android:id="@+id/txtStatsSpAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="8dp"
+            android:ems="3"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="50"
+            android:textAlignment="textEnd"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleStats" />
+
+        <TextView
+            android:id="@+id/txtTitleSpDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="Sp. Defense"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStatsSpAttack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStatsSpAttack" />
+
+        <EditText
+            android:id="@+id/txtStatsSpDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="3"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="50"
+            android:textAlignment="textEnd"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleStats" />
+
+        <TextView
+            android:id="@+id/txtTitleAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="Attack"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStatsAttack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStatsAttack" />
+
+        <EditText
+            android:id="@+id/txtStatsAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="8dp"
+            android:ems="3"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="55"
+            android:textAlignment="textEnd"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatsSpAttack" />
+
+        <TextView
+            android:id="@+id/txtTitleDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:text="Defense"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStatsDefense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStatsDefense"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/txtStatsDefense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="3"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="40"
+            android:textAlignment="textEnd"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatsSpAttack" />
+
+        <TextView
+            android:id="@+id/txtTitleHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            app:layout_constraintVertical_bias="0.5"
+            android:text="HP"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStatsHP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStatsHP" />
+
+        <EditText
+            android:id="@+id/txtStatsHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginTop="8dp"
+            android:ems="3"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="35"
+            android:textAlignment="textEnd"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatsAttack" />
+
+        <TextView
+            android:id="@+id/txtTitleSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:text="Speed"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtStatsSpeed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtStatsSpeed"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <EditText
+            android:id="@+id/txtStatsSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="3"
+            android:focusable="false"
+            android:inputType="none"
+            android:longClickable="false"
+            android:text="90"
+            android:textAlignment="textEnd"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatsDefense" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

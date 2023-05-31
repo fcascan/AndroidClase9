@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="FragmentOne" type="id" />
+    <item name="txtSearch" type="id" />
+    <item name="btnSearch" type="id" />
+    <item name="txtTitleName" type="id" />
+    <item name="txtId" type="id" />
+    <item name="txtTitleEng" type="id" />
+    <item name="txtNameEng" type="id" />
+    <item name="txtTitleJap" type="id" />
+    <item name="txtNameJap" type="id" />
+    <item name="txtTitleChi" type="id" />
+    <item name="txtNameChi" type="id" />
+    <item name="txtNameFra" type="id" />
+    <item name="txtTitleFra" type="id" />
+    <item name="txtTitleTypes" type="id" />
+    <item name="txtTypes" type="id" />
+    <item name="txtTitleStats" type="id" />
+    <item name="txtTitleSpAttack" type="id" />
+    <item name="txtStatsSpAttack" type="id" />
+    <item name="txtTitleSpDefense" type="id" />
+    <item name="txtStatsSpDefense" type="id" />
+    <item name="txtTitleAttack" type="id" />
+    <item name="txtStatsAttack" type="id" />
+    <item name="txtTitleDefense" type="id" />
+    <item name="txtStatsDefense" type="id" />
+    <item name="txtTitleHP" type="id" />
+    <item name="txtStatsHP" type="id" />
+    <item name="txtStatsSpeed" type="id" />
+    <item name="txtTitleSpeed" type="id" />
+    <item name="progressBar" type="id" />
+</resources>
