@@ -86,7 +86,7 @@ class FragmentOne : Fragment() {
         }
 
         txtSearch.setOnKeyListener { _, _, event ->
-            if(event.action == android.view.KeyEvent.ACTION_DOWN) {
+            if(event.action == android.view.KeyEvent.ACTION_DOWN && event.keyCode == android.view.KeyEvent.KEYCODE_ENTER) {
                 if (txtSearch.text.toString().isNotEmpty()) {
                     viewModel.getIdFromFirebase(txtSearch.text.toString().toInt())
                 }
